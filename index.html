@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>game</title>
+        <script src="javascript.js"></script>
+    </head>
+    <script>
+        function getComputerChoice() {
+            let max = 3;
+            let min = 1;
+            let randomNumber = Math.floor(Math.random()*(max - min +1)) + min;
+            console.log(randomNumber);
+            if (randomNumber === 1) {
+                return "Rock";
+            } else if (randomNumber === 2) {
+                return "Paper";
+            } else {
+                return "Scissors";
+            }
+        }
+
+        function playRound(playerSelection, computerSelection) {
+            
+        }
+
+        console.log(getComputerChoice());
+    </script>
+</html>
